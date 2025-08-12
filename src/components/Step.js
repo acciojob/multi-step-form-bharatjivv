@@ -5,7 +5,7 @@ export default function Step({ step, formData, onChange, onNext, onPrev, onSubmi
     <form onSubmit={onSubmit}>
       {step === 1 && (
         <>
-          <div>
+          <div id="step1">
             <label htmlFor="first_name">First Name:</label>
             <input
               id="first_name"
@@ -30,7 +30,7 @@ export default function Step({ step, formData, onChange, onNext, onPrev, onSubmi
 
       {step === 2 && (
         <>
-          <div>
+          <div id="step2">
             <label htmlFor="model">Car Model:</label>
             <input
               id="model"
@@ -55,7 +55,7 @@ export default function Step({ step, formData, onChange, onNext, onPrev, onSubmi
 
       {step === 3 && (
         <>
-          <div>
+          <div id="step3">
             <label htmlFor="card_info">Card Info:</label>
             <input
               id="card_info"
