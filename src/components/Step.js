@@ -4,8 +4,8 @@ export default function Step({ step, formData, onChange, onNext, onPrev, onSubmi
   return (
     <form onSubmit={onSubmit}>
       {step === 1 && (
-        <>
-          <div id="step1">
+        <div id="step1">
+          <div>
             <label htmlFor="first_name">First Name:</label>
             <input
               id="first_name"
@@ -25,12 +25,12 @@ export default function Step({ step, formData, onChange, onNext, onPrev, onSubmi
               required
             />
           </div>
-        </>
+        </div>
       )}
 
       {step === 2 && (
-        <>
-          <div id="step2">
+        <div id="step2">
+          <div>
             <label htmlFor="model">Car Model:</label>
             <input
               id="model"
@@ -50,12 +50,12 @@ export default function Step({ step, formData, onChange, onNext, onPrev, onSubmi
               required
             />
           </div>
-        </>
+        </div>
       )}
 
       {step === 3 && (
-        <>
-          <div id="step3">
+        <div id="step3">
+          <div>
             <label htmlFor="card_info">Card Info:</label>
             <input
               id="card_info"
@@ -75,7 +75,7 @@ export default function Step({ step, formData, onChange, onNext, onPrev, onSubmi
               required
             />
           </div>
-        </>
+        </div>
       )}
 
       {/* Navigation Buttons */}
